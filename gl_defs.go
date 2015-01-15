@@ -719,6 +719,7 @@ const (
 	NOR                                           = C.GL_NOR
 	NOTEQUAL                                      = C.GL_NOTEQUAL
 	NUM_COMPRESSED_TEXTURE_FORMATS                = C.GL_NUM_COMPRESSED_TEXTURE_FORMATS
+	NUM_EXTENSIONS                                = C.GL_NUM_EXTENSIONS
 	OBJECT_LINEAR                                 = C.GL_OBJECT_LINEAR
 	OBJECT_PLANE                                  = C.GL_OBJECT_PLANE
 	OBJECT_TYPE                                   = C.GL_OBJECT_TYPE

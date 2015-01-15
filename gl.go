@@ -614,6 +614,12 @@ func GetString(name GLenum) string {
 	return C.GoString((*C.char)(s))
 }
 
+//const uint8 * glGetStringi (GLenum name, uint index)
+func GetStringi(name GLenum, index uint) string {
+	s := unsafe.Pointer(C.glGetStringi(C.GLenum(name), C.GLuint(index)))
+	return C.GoString((*C.char)(s))
+}
+
 //void glHint (GLenum target, GLenum mode)
 func Hint(target GLenum, mode GLenum) {
 	C.glHint(C.GLenum(target), C.GLenum(mode))
